@@ -452,8 +452,8 @@ h1 {
 
 .food-cards {
     display: flex;
-    justify-content: space-between;
-    margin: 0 120px;
+    justify-content: space-evenly;
+    margin: 0 3%;
 }
 
 .food-card {
