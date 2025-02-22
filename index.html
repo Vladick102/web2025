@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
     <title>JezSalad</title>
 </head>
 
 <body>
     <img class="background-img" src="./static/background-stripes-vertical.svg" alt="Background" />
+    <img class="grad" src="./static/grad.png" alt="Gradient">
     <header class="main-header">
-        <a class="text-logo"><span style="color: orange;">JEZ</span> SALAD</a>
+        <a class="text-logo"><span class="orange-highlight">JEZ</span> SALAD</a>
         <nav class="header-nav">
-            <a class="header-link" href="#">Home</a>
-            <a class="header-link" href="#">Menu</a>
-            <a class="header-link" href="#">Contact</a>
-            <a class="header-link" href="#">About Us</a>
-            <button class="orange-button">Sign</button>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+            <a href="#">About Us</a>
         </nav>
+        <button class="orange-button">Sign</button>
     </header>
     <section class="main-page">
         <div class="main-page-left">
             <span class="highlight">#1 Best Healthy Salad</span>
-            <h1><span style="color: orange;">Skip</span> The Diet, Just Eat Healthy With Jez Salad</h1>
+            <h1><span class="orange-highlight">Skip</span> The Diet, Just Eat Healthy With Jez Salad</h1>
             <p>Imagine you don't need a diet because we provide healthy and delicious food for you!</p>
             <button class="orange-button">Order Food</button>
             <div class="main-stats">
@@ -46,24 +48,26 @@
             <div>
                 <div class="customer-review">
                     <img src="./static/smile.svg" alt="Smiling emoji" />
-                    <h3>Our Happy Customer</h3>
-                    <div>
-                        <img src="./static/star.svg" alt="Star" />
-                        <span><b>4.9</b> (1,989 Reviews)</span>
+                    <div class="customer-text">
+                        <span>Our Happy Customer</span>
+                        <div class="star-rating">
+                            <img src="./static/star.svg" alt="Star" />
+                            <span><b>4.9</b> (1,989 Reviews)</span>
+                        </div>
                     </div>
                 </div>
                 <div class="calories">
                     <span>Daily Calories</span>
                     <span class="calories-number">123 Cal</span>
-                    <div class="calorie-progress-container">
-                        <progress class="calorie-progress" value="30" max="100"></progress>
-                        <progress class="calorie-progress" value="50" max="100"></progress>
-                        <progress class="calorie-progress" value="60" max="100"></progress>
-                        <progress class="calorie-progress" value="55" max="100"></progress>
-                        <progress class="calorie-progress" value="50" max="100"></progress>
-                        <progress class="calorie-progress" value="65" max="100"></progress>
-                        <progress class="calorie-progress" value="75" max="100"></progress>
-                        <progress class="calorie-progress" value="80" max="100"></progress>
+                    <div class="calories-progress-container">
+                        <div class="calories-progress" style="--val: 30"></div>
+                        <div class="calories-progress" style="--val: 50"></div>
+                        <div class="calories-progress" style="--val: 60"></div>
+                        <div class="calories-progress" style="--val: 55"></div>
+                        <div class="calories-progress" style="--val: 50"></div>
+                        <div class="calories-progress" style="--val: 65"></div>
+                        <div class="calories-progress" style="--val: 75"></div>
+                        <div class="calories-progress" style="--val: 80"></div>
                     </div>
                 </div>
             </div>
@@ -71,7 +75,7 @@
     </section>
     <section class="why-choose-us-page">
         <div class="text">
-            <h2>WHY CHOOSE US FOR <span style="color: orange;">YOUR HEALTHY FOOD</span></h2>
+            <h2>WHY CHOOSE US<br /> FOR <span class="orange-highlight">YOUR HEALTHY FOOD</span></h2>
             <p>We continue to consistently choose and maintain the quality of the fruit served, so that it remains fresh
                 and nutritious when you eat it.</p>
         </div>
@@ -81,7 +85,10 @@
                 <h4>Own fruit orchard</h4>
                 <p>Langsung dari Kebun Sendiri yang tersebar di setiap provinsi yang memiliki cabang toko Jez Salad.
                 </p>
-                <a class="info-link" href="#">Learn more -></a>
+                <a class="info-link" href="#">
+                    <span>Learn more</span>
+                    <img src="./static/arrow_right.svg" alt="Arrow pointing Right">
+                </a>
             </div>
             <div class="info-card">
                 <img src="./static/number-one.svg" alt="NumberOneIcon" />
@@ -89,26 +96,32 @@
                 <p>The pioneer of healthy fruit salads that are delicious & suitable for all people with the best
                     quality assurance.
                 </p>
-                <a class="info-link" href="#">Learn more -></a>
+                <a class="info-link" href="#">
+                    <span>Learn more</span>
+                    <img src="./static/arrow_right.svg" alt="Arrow pointing Right">
+                </a>
             </div>
             <div class="info-card">
                 <img src="./static/trophy.svg" alt="ChampionIcon" />
                 <h4>100 Top Brand</h4>
                 <p>We are one of the best brands in the Food and Beverage sector in Indonesia.
                 </p>
-                <a class="info-link" href="#">Learn more -></a>
+                <a class="info-link" href="#">
+                    <span>Learn more</span>
+                    <img src="./static/arrow_right.svg" alt="Arrow pointing Right">
+                </a>
             </div>
         </div>
     </section>
     <section class="reviews-page">
         <div class="reviews-text">
-            <h2>What Are People Saying <span style="color: orange;">About Us</span></h2>
+            <h2>What Are People Saying <span class="orange-highlight">About Us</span></h2>
             <p>We are very happy if you are satisfied with our service and products, let's
                 read pure reviews from customers who bought our products.</p>
-            <span><b>02</b>/ 05</span>
+            <span class="page-num"><b>02</b>/ 05</span>
             <div class="review-arrows">
-                <button class="left-arrow"> -> </button>
-                <button class="right-arrow"> <- </button>
+                <div class="arrow"><img src="./static/arrow_left.svg" alt="Arrow pointing Left"></div>
+                <div class="arrow"><img src="./static/arrow_right.svg" alt="Arrow pointing Right"></div>
             </div>
         </div>
         <div class="client-cards">
@@ -144,32 +157,37 @@
     <section class="menu-page">
         <div class="text">
             <h5>MENU YANG MEMBUATMU JATUH CINTA</h5>
-            <h2>ENJOY THE BEST MENU AND GET <span style="color: orange;">DISCOUNTS</span> AVAILABLE</h2>
+            <h2>ENJOY THE BEST MENU AND GET <br /><span class="orange-highlight">DISCOUNTS</span> AVAILABLE</h2>
         </div>
         <div class="food-cards">
             <div class="food-card">
                 <img src="./static/salad1.png" alt="FruitSalad" />
-                <span class="food-name">Mini Salad Yummy</span>
-                <span class="food-price">$ 2.99</span>
+                <div class="food-text">
+                    <span class="food-name">Mini Salad Yummy</span>
+                    <span class="food-price">$ 2.99</span>
+                </div>
             </div>
             <div class="food-card">
                 <img src="./static/salad2.png" alt="FruitSalad" />
-                <span class="food-name">Completed Salad</span>
-                <span class="food-price">$ 3.99</span>
+                <div class="food-text">
+                    <span class="food-name">Completed Salad</span>
+                    <span class="food-price">$ 3.99</span>
+                </div>
             </div>
             <div class="food-card">
                 <img src="./static/salad3.png" alt="FruitSalad" />
-                <span class="food-name">Salad Yummy Red</span>
-                <span class="food-price">$ 3.99</span>
+                <div class="food-text">
+                    <span class="food-name">Salad Yummy Red</span>
+                    <span class="food-price">$ 3.99</span>
+                </div>
             </div>
         </div>
     </section>
     <section class="subscription-page">
-        <img src="static/background-stripes-horizontal.svg" alt="background" />
         <div class="subscription-container">
             <span>Our Subscribe</span>
-            <h2 class="bold-h2">Subscribe To Get The Latest Promo from Jez Salad</h2>
-            <p>We recommended you to subscribe to our promo program,
+            <h2 class="bold-h2">Subscribe To Get The Latest <br /> Promo from Jez Salad</h2>
+            <p>We recommended you to subscribe to our promo program, <br />
                 drop your email below to get daily update about us
             </p>
             <form class="subscription-input">
@@ -180,19 +198,19 @@
     </section>
     <footer>
         <div class="logo">
-            <a class="text-logo"><span style="color: orange;">JEZ</span> SALAD</a>
+            <a class="text-logo"><span class="orange-highlight">JEZ</span> SALAD</a>
             <p>Jez Salad is the pioneer of healthy fruit salad with high nutrition.</p>
             <span class="copyright">©Copyright Jez Salad</span>
         </div>
         <div class="links">
-            <span class="footer-bold" style="color: orange;">Feature</span>
+            <span class="footer-bold" class="orange-highlight">Feature</span>
             <a href="#">Menu</a>
             <a href="#">Promo</a>
             <a href="#">Contact</a>
             <a href="#">About us</a>
         </div>
         <div class="get-in-touch">
-            <span class="footer-bold" style="color: orange;">Get in Touch</span>
+            <span class="footer-bold" class="orange-highlight">Get in Touch</span>
             <div class="touch-instance">
                 <img src="./static/location-icon.svg" alt="location" />
                 <span>8819 Ohio St. South Gate,
